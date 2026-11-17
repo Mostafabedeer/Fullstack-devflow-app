@@ -46,7 +46,6 @@ function UserAvatar({
             {initials}
           </AvatarFallback>
         )}
-        <AvatarBadge className="bg-green-600 dark:bg-green-800" />
       </Avatar>
     </Link>
   );

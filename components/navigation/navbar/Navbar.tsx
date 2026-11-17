@@ -31,7 +31,7 @@ const Navbar = async () => {
         <Theme />
 
         {user && (
-          <UserAvatar userId={user.id} imgUrl={user.image} name={user.name} />
+          <UserAvatar userId={user?.id} imgUrl={user.image} name={user.name} />
         )}
         <MobileNavigation />
       </div>

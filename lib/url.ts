@@ -1,32 +1,31 @@
 import qs from "query-string";
 
-interface FormUrlParamsOptions {
+interface UrlQueryParams {
   params: string;
   key: string;
   value: string;
 }
 
-export function formUrlParams({ params, key, value }: FormUrlParamsOptions) {
-  const queryString = qs.parse(params);
-  // { query: "test"}
-  queryString[key] = value;
-  // { query: "test", page: 1}
-  return qs.stringifyUrl({
-    url: window.location.pathname,
-    query: queryString,
-  });
-  // query=test&page=1
-}
-
-interface RemoveUrlParamsOptions {
+interface RemoveUrlQueryParams {
   params: string;
   keysToRemove: string[];
 }
 
-export function removeUrlParams({
+export const formUrlQuery = ({ params, key, value }: UrlQueryParams) => {
+  const queryString = qs.parse(params);
+
+  queryString[key] = value;
+
+  return qs.stringifyUrl({
+    url: window.location.pathname,
+    query: queryString,
+  });
+};
+
+export const removeKeysFromUrlQuery = ({
   params,
   keysToRemove,
-}: RemoveUrlParamsOptions) {
+}: RemoveUrlQueryParams) => {
   const queryString = qs.parse(params);
 
   keysToRemove.forEach((key) => {
@@ -40,4 +39,4 @@ export function removeUrlParams({
     },
     { skipNull: true },
   );
-}
+};

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import AuthProvider from "@/context/AuthProvider";
 import ThemeProvider from "@/context/Theme";
 import "@/app/_styles/globals.css";
 import { Toaster } from "@/components/ui/sonner";
@@ -34,14 +35,16 @@ export default function RootLayout({
       className={`${inter.className} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <AuthProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </AuthProvider>
         <Toaster />
       </body>
     </html>

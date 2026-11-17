@@ -1,0 +1,33 @@
+import Link from "next/link";
+
+import ROUTES from "@/constants/routes";
+
+import UserAvatar from "../UserAvatar";
+
+const UserCard = ({ _id, name, image, username }: User) => (
+  <div className="shadow-light100_darknone xs:w-57.5 w-full">
+    <article
+      className="background-light900_dark200 light-border flex flex-col items-center justify-center rounded-2xl border p-8"
+      style={{
+        padding: 30,
+      }}
+    >
+      <UserAvatar
+        userId={_id}
+        name={name}
+        imgUrl={image}
+        className="rounded-full object-cover"
+        fallbackClassName="text-xl tracking-widest"
+      />
+
+      <Link href={ROUTES.PROFILE(_id)}>
+        <div className="mt-4 text-center">
+          <h3 className="h3-bold text-dark200_light900 line-clamp-1">{name}</h3>
+          <p className="body-regular text-dark500_light500 mt-2">@{username}</p>
+        </div>
+      </Link>
+    </article>
+  </div>
+);
+
+export default UserCard;

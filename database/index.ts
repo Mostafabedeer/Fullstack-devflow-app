@@ -1,6 +1,6 @@
 import Account from "./account.model";
 import User from "./user.model";
-import vote from "./vote.model";
+import Vote from "./vote.model";
 import tag from "./tag.model";
 import Answer from "./answer.model";
 import Question from "./question.model";
@@ -11,7 +11,7 @@ import Collection from "./collection.model";
 export {
   Account,
   User,
-  vote,
+  Vote,
   tag,
   Answer,
   Question,

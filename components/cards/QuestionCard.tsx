@@ -6,6 +6,7 @@ import ROUTES from "@/constants/routes";
 
 interface QuestionCardProps {
   question: Question;
+  showActionBtns?: boolean;
 }
 
 function QuestionCard({ question }: QuestionCardProps) {

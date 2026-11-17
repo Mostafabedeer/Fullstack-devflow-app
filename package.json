@@ -19,6 +19,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cn": "^0.5.1",
+    "dayjs": "^1.11.23",
     "devicon": "^2.18.0",
     "lucide-react": "^1.21.0",
     "mongoose": "^9.9.5",

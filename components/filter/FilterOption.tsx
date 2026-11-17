@@ -1,6 +1,6 @@
 "use client";
 
-import { formUrlParams, removeUrlParams } from "@/lib/url";
+import { formUrlQuery, removeKeysFromUrlQuery } from "@/lib/url";
 import { useRouter, useSearchParams } from "next/navigation";
 
 interface FilterOptionProps {
@@ -14,7 +14,7 @@ function FilterOption({ filterOption }: FilterOptionProps) {
 
   const handleFilterClick = (filter: string) => {
     if (filter === activeFilter) {
-      const newUrl = removeUrlParams({
+      const newUrl = removeKeysFromUrlQuery({
         params: searchParams.toString(),
         keysToRemove: ["filter"],
       });
@@ -23,7 +23,7 @@ function FilterOption({ filterOption }: FilterOptionProps) {
       return;
     }
 
-    const newUrl = formUrlParams({
+    const newUrl = formUrlQuery({
       params: searchParams.toString(),
       key: "filter",
       value: filter,

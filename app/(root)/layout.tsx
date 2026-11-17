@@ -2,6 +2,7 @@ import HotNetwork from "@/components/HotNetwork";
 import Navbar from "@/components/navigation/navbar/Navbar";
 import PopularTags from "@/components/PopularTags";
 import LeftSideBar from "@/components/navigation/navbar/LeftSideBar";
+import RefreshOnHomeNavigation from "@/components/navigation/RefreshOnHomeNavigation";
 import { Toaster } from "@/components/ui/toast";
 
 function RootLayout({ children }: { children: React.ReactNode }) {
@@ -11,6 +12,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <LeftSideBar />
       </aside>
       <Navbar />
+      <RefreshOnHomeNavigation />
       <div className="col-span-7 col-start-3 row-span-4 row-start-2 min-h-0 flex-1 overflow-y-auto lg:col-span-5">
         {children}
       </div>
