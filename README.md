@@ -14,9 +14,6 @@
     <img src="https://img.shields.io/badge/-Open_AI-black?style=for-the-badge&logoColor=white&logo=openai&color=412991" alt="openai" />
   </div>
 
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-  <img src="https://github.com/user-attachments/assets/54ef6cd0-1f00-4989-a6a5-3f77ca3f68a2" style="width: 150px; height: auto;" />
-</a>
 
 <div align="left">
 ## <a name="tech-stack">⚙️ Tech Stack</a>
