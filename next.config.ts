@@ -5,9 +5,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  turbopack: {
-    root: "C:\\Users\\20155\\Downloads\\studying\\js_mastry_nextjs\\jsmastery-nextjs-app",
-  },
+
   images: {
     remotePatterns: [
       {
