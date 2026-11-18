@@ -3,7 +3,7 @@ import { fetchHandler } from "./handlers/fetch";
 import { IAccount } from "@/database/account.model";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000/api";
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000/api";
 
 export const api = {
   users: {
