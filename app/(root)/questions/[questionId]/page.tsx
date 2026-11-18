@@ -109,7 +109,7 @@ const QuestionDetails = async ({ params, searchParams }: RouteParams) => {
           </div>
         </div>
 
-        <div className="mt-4 ml-8 flex w-full items-center justify-end gap-4 sm:mt-7 sm:ml-10">
+        <div className="mt-4 mr-8 flex w-full items-center justify-end gap-4 sm:mt-7 sm:mr-10">
           <Suspense fallback={<div>Loading...</div>}>
             <Votes
               targetType="question"

@@ -48,10 +48,7 @@ const CommonFilter = ({
 
   return (
     <div className={cn("relative", containerClasses)}>
-      <Select
-        value={paramsFilter}
-        onValueChange={handleUpdateParams}
-      >
+      <Select value={paramsFilter} onValueChange={handleUpdateParams}>
         <SelectTrigger
           className={cn(
             "body-regular no-focus light-border background-light800_dark300 text-dark500_light700 border px-5 py-2.5",
