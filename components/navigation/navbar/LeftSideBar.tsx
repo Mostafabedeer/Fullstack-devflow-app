@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavLinks from "./NavLinks";
 import Link from "next/link";
-import { auth, signOut } from "@/auth";
+import { auth } from "@/auth";
 import { LogOut } from "lucide-react";
 import { Button } from "../../ui/button";
 import ROUTES from "@/constants/routes";
