@@ -16,7 +16,7 @@
 
 
 <div align="left">
-## <a name="tech-stack">⚙️ Tech Stack</a>
+<a name="tech-stack">⚙️ Tech Stack</a>
 
 - Zod
 - Next.js
