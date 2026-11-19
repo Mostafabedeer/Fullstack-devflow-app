@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
     <img src="https://img.shields.io/badge/-ShadCN_UI-black?style=for-the-badge&logoColor=white&logo=shadcnui&color=000000" alt="shadcnui" />
-    <img src="https://img.shields.io/badge/-Open_AI-black?style=for-the-badge&logoColor=white&logo=openai&color=412991" alt="openai" />
+
   </div>
 
 
@@ -47,8 +47,6 @@
 👉 **Bookmarking**: Save questions for quick access later.
 
 👉 **Answer Posting**: MDX editor with light/dark modes for submitting answers.
-
-👉 **AI Answer Generation**: Get AI-generated responses to questions.
 
 👉 **Answer Filtering**: Sort answers by newest or most-voted, with pagination.
 
