@@ -21,7 +21,6 @@
 - Zod
 - Next.js
 - NextAuth
-- Open AI
 - MongoDB
 - ShadCN UI
 - TypeScript
